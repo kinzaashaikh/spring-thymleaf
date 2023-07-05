@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Example</title>
+    <style>
+
+   *{ margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.logo img{
+    width: 30px;
+    margin-right: 15px;
+    display: block;
+}
+.navbar-center ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding: 5px;
+}
+.navbar-center ul li a img{
+    width: 30px;
+}
+.navbar-center ul li a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+}
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active link::after{
+    width: 100px;
+
+}
+.nav-profile-img{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+.online{
+    position: relative;
+
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+}
+.search-box{
+    background: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.search-box img{
+    width: 14px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="Menu Bar.html" class="logo"><img src="c:\Users\Kashaf\Downloads\Aha-Soft-Standard-City-City.256.png"></a>
+        <div class="search-box">
+            <img src="c:\Users\Kashaf\Downloads\icons8-search-25.png">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="cons8-home-24.png"><span>Home</span></a></li>
+            <li><a href="#"><img src="c:\Users\Kashaf\Downloads\icons8-user-24.png"><span>My Network</span></a></li>
+            <li><a href="#"><img src="c:\Users\Kashaf\Downloads\icons8-shopping-bag-24.png"><span>Jobs</span></a></li>
+            <li><a href="#"><img src="c:\Users\Kashaf\Downloads\icons8-chat-25.png"><span>Messaging</span></a></li>
+            <li><a href="#"><img src="c:\Users\Kashaf\Downloads\icons8-notification-25.png"><span>Notifications</span></a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div class="online">
+            <img src="c:\Users\Kashaf\Downloads\icons8-person-25.png" class="nav-profile-img"><span>Me</span>
+        </div>
+    </div>
+
+</nav>
+</body>
+</html>
+
+</body>
+</html>
